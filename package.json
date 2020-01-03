@@ -1,0 +1,20 @@
+{
+  "source": "src/SimIt.js",
+  "main": "dist/simit.js",
+  "module": "dist/simit.mjs",
+  "unpkg": "dist/simit.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "name": "simit",
+  "description": "Simulate keyboard/mouse events in the browser",
+  "version": "1.0.0",
+  "author": "Conor Irwin",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "microbundle": "^0.11.0"
+  }
+}
