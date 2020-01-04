@@ -7,8 +7,6 @@ window.addEventListener('click', function(e){
     console.log(e);
 })
 
-// add touchEvents
-
 const input = document.querySelector('input');
 input.addEventListener('keydown', (e) => {
     console.log(e);
@@ -17,8 +15,7 @@ input.addEventListener('keydown', (e) => {
 
 const simit = new SimIt();
 console.log(simit);
-simAll();
-
+//simAll();
 
 function hi() {
     return new Promise(resolve => {
@@ -29,13 +26,13 @@ function hi() {
 }
 
 function simAll() {
-    simit.setElement(input).all([
+    return simit.setElement(input).all([
         {keydown: 'h'},
         {sleep: 1000},
         {callback: hi},
         {repeat: { event: {keydown: 'y'}, amount: 10, delay: 500}},
         {keydown: 'i'},
-        {sleep: 500},
+        {sleep: 1500},
         {click: { x: 100, y: 250 }},
     ], onStart, onComplete);
 }
