@@ -45,6 +45,14 @@ const simit = new SimIt();
 const simit = new window.simit();
 ```
 
+#### CDN
+```html
+<script src="https://cdn.jsdelivr.net/gh/RetroVX/SimIt/dist/simit.umd.min.js"></script>
+```
+```javascript
+const simit = new window.simit();
+```
+
 ### Examples
 
 #### Simulate a sequence of events
